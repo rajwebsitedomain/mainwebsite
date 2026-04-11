@@ -100,7 +100,7 @@ const projects: Project[] = [
     github: 'https://github.com/singhrajvardhan/SecureExam-Platform'
   }
 ];
-];
+
 
 const testimonials: Testimonial[] = [
   {

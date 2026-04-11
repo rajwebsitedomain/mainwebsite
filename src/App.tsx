@@ -46,11 +46,11 @@ interface Service {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'Thikana Dhabla',
+    title: '🏰 Thikana Dhabla',
     description: 'Heritage website with family tree visualization',
     category: 'web',
     icon: <Globe className="w-10 h-10" />,
-    tags: ['React', 'SCSS'],
+    tags: ['html', 'css'],
     link: 'https://www.thikanadhabla.in',
     linkText: 'Visit Site'
   },
@@ -60,50 +60,56 @@ const projects: Project[] = [
     description: 'Architecture firm portfolio with project showcase',
     category: 'web',
     icon: <Layers className="w-10 h-10" />,
-    tags: ['Next.js', 'Tailwind'],
-    link: 'https://deeparchitect.in',
+    tags: ['Html.js,css'],
+    link: 'http://deeparchitect.liveblog365.com/',
     linkText: 'View Portfolio'
   },
   {
-    id: 3,
-    title: 'JuzVents',
-    description: 'Event management platform with booking system',
-    category: 'web',
-    icon: <Sparkles className="w-10 h-10" />,
-    tags: ['Vue', 'GSAP'],
-    link: 'https://www.juzvents.com',
-    linkText: 'Explore'
+     id: 3,
+    title: '🔧 DevOps Accelerator',
+    description: 'Complete real-world DevOps pipeline simulation with automated CI/CD workflows, containerized deployments, and scalable modular architecture. Demonstrates full lifecycle: code → build → test → deploy.',
+    category: 'devops',
+    icon: <Rocket className="w-10 h-10" />,
+    tags: ['Jenkins', 'Docker', 'Kubernetes', 'Terraform', 'Prometheus', 'Grafana'],
+   
+    linkText: 'Live Demo',
+    github: 'https://github.com/singhrajvardhan/DevOps_Accelerator'
   },
 {
   id: 4,
-  title: '3-Tier AWS App',
-  description: 'VPC, EC2, RDS, ALB architecture setup',
-  category: 'cloud',
-  icon: <Cloud className="w-10 h-10" />,
-  tags: ['AWS', 'CloudFormation'],
-  link: 'https://github.com/singhrajvardhan?tab=repositories',
-  linkText: 'Case Study'
-},
-{
-  id: 5,
-  title: 'K8s Microservices',
-  description: 'K3s cluster with Helm charts & monitoring',
-  category: 'cloud',
-  icon: <Boxes className="w-10 h-10" />,
-  tags: ['Kubernetes', 'Docker'],
-  link: 'https://github.com/singhrajvardhan?tab=repositories',
-  linkText: 'View Repo'
-},
-{
-  id: 6,
-  title: 'CI/CD Pipeline',
-  description: 'GitHub Actions deployment to EC2',
-  category: 'cloud',
-  icon: <GitBranch className="w-10 h-10" />,
-  tags: ['CI/CD', 'Docker'],
-  link: 'https://github.com/singhrajvardhan?tab=repositories',
-  linkText: 'See Pipeline'
-}
+    title: '☁️ AWS EC2 + S3 Static Website Hosting',
+    description: 'A beginner‑friendly cloud project demonstrating how to host a static website using Amazon EC2 as the web server and Amazon S3 to store and serve static assets (images/files).',
+    category: 'cloud',
+    icon: <Cloud className="w-10 h-10" />,
+    tags: ['AWS', 'EC2', 'S3', 'Linux', 'Apache/Nginx'],
+   
+    linkText: 'View Deployment',
+    github: 'https://github.com/singhrajvardhan/aws-ec2-s3-static-website'
+  },
+
+  {
+    id: 5,
+    title: '🏠 Personal Private Cloud',
+    description: 'Self-hosted cloud system using Nextcloud on Linux server with secure file access, synchronization, and Nginx reverse proxy for containerized services.',
+    category: 'selfhosted',
+    icon: <Home className="w-10 h-10" />,
+    tags: ['Nextcloud', 'Docker', 'Nginx', 'Linux', 'SSL/TLS', 'Reverse Proxy'],
+   
+    linkText: 'Access Cloud',
+    github: 'https://github.com/singhrajvardhan/personal-private-CLoud'
+  },
+  {
+    id: 6,
+    title: '📝 SecureExam Platform',
+    description: 'Full-stack examination platform featuring automated proctoring through Face Detection, Tab-Monitoring, and real-time alerts via WebSockets.',
+    category: 'web',
+    icon: <Globe className="w-10 h-10" />,  // Or use <Shield /> or <Camera /> icon
+    tags: ['React', 'Node.js', 'WebSockets', 'Face Detection', 'Socket.io'],
+    link: 'https://examsystem.liveblog365.com',
+    linkText: 'Live Demo',
+    github: 'https://github.com/singhrajvardhan/SecureExam-Platform'
+  }
+];
 ];
 
 const testimonials: Testimonial[] = [

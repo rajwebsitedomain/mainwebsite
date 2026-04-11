@@ -4,6 +4,18 @@ import {
   Sparkles, Globe, Cloud, Code, Paintbrush, Boxes, GitBranch, Terminal,
   Menu, X, ExternalLink, Quote, Mail, Phone,
   MapPin, ArrowUp, Send, CheckCircle, AlertCircle, Layers, Zap, Crown
+} 
+  import {
+  Boxes,
+  GitBranch,
+  Terminal,
+  Cloud,
+  Database,
+  Server,
+  Code,
+  BarChart3,
+  AlertCircle,
+  Python
 } from 'lucide-react';
 // Types
 interface Project {
@@ -113,12 +125,44 @@ const testimonials: Testimonial[] = [
 ];
 
 const services: Service[] = [
-  { id: 1, title: 'Frontend Development', description: 'HTML, CSS, JavaScript, React', icon: <Code className="w-10 h-10" /> },
-  { id: 2, title: 'UI/UX Design', description: 'Figma, prototypes, design systems', icon: <Paintbrush className="w-10 h-10" /> },
-  { id: 3, title: 'AWS Cloud', description: 'EC2, S3, Lambda, VPC', icon: <Cloud className="w-10 h-10" /> },
-  { id: 4, title: 'Kubernetes', description: 'Orchestration, Helm charts', icon: <Boxes className="w-10 h-10" /> },
-  { id: 5, title: 'CI/CD Pipelines', description: 'GitHub Actions, Jenkins', icon: <GitBranch className="w-10 h-10" /> },
-  { id: 6, title: 'Infrastructure as Code', description: 'Terraform, CloudFormation', icon: <Terminal className="w-10 h-10" /> }
+ { id: 1, category: 'AWS', title: 'EC2, S3, VPC', description: 'Compute, storage, networking', icon: <Cloud className="w-10 h-10" /> },
+  { id: 2, category: 'AWS', title: 'Lambda, RDS', description: 'Serverless functions, managed databases', icon: <Database className="w-10 h-10" /> },
+  { id: 3, category: 'AWS', title: 'EKS', description: 'Managed Kubernetes on AWS', icon: <Boxes className="w-10 h-10" /> },
+  
+  // ☁️ Azure Section
+  { id: 4, category: 'Azure', title: 'AKS', description: 'Azure Kubernetes Service', icon: <Boxes className="w-10 h-10" /> },
+  { id: 5, category: 'Azure', title: 'Functions', description: 'Serverless event-driven compute', icon: <Code className="w-10 h-10" /> },
+  { id: 6, category: 'Azure', title: 'DevOps & Monitor', description: 'CI/CD pipelines, application insights', icon: <GitBranch className="w-10 h-10" /> },
+  
+  // 🐳 Docker Section
+  { id: 7, category: 'Docker', title: 'Containers', description: 'Image building, containerization', icon: <Server className="w-10 h-10" /> },
+  { id: 8, category: 'Docker', title: 'Compose', description: 'Multi-container applications', icon: <Terminal className="w-10 h-10" /> },
+  { id: 9, category: 'Docker', title: 'Swarm', description: 'Native orchestration', icon: <Boxes className="w-10 h-10" /> },
+  
+  // ☸️ Kubernetes Section
+  { id: 10, category: 'Kubernetes', title: 'EKS & AKS', description: 'Managed K8s on cloud', icon: <Boxes className="w-10 h-10" /> },
+  { id: 11, category: 'Kubernetes', title: 'Helm', description: 'Package manager for K8s', icon: <Terminal className="w-10 h-10" /> },
+  { id: 12, category: 'Kubernetes', title: 'Istio', description: 'Service mesh', icon: <GitBranch className="w-10 h-10" /> },
+  
+  // 🏗️ Terraform Section
+  { id: 13, category: 'Terraform', title: 'Infrastructure as Code', description: 'IaC, Modules, State Management', icon: <Terminal className="w-10 h-10" /> },
+  
+  // 🔁 Jenkins Section
+  { id: 14, category: 'Jenkins', title: 'CI/CD', description: 'Pipelines, Shared Libraries', icon: <GitBranch className="w-10 h-10" /> },
+  
+  // 📊 Grafana Section
+  { id: 15, category: 'Grafana', title: 'Dashboards', description: 'Loki, Tempo for logs & traces', icon: <BarChart3 className="w-10 h-10" /> },
+  
+  // 📈 Prometheus Section
+  { id: 16, category: 'Prometheus', title: 'Metrics', description: 'Alerts, Exporters for monitoring', icon: <AlertCircle className="w-10 h-10" /> },
+  
+  // 🐍 Python Section
+  { id: 17, category: 'Python', title: 'FastAPI & Django', description: 'Web frameworks, scripting, automation', icon: <Python className="w-10 h-10" /> },
+  
+  // Original items (keep yours)
+  { id: 18, title: 'Kubernetes', description: 'Orchestration, Helm charts', icon: <Boxes className="w-10 h-10" /> },
+  { id: 19, title: 'CI/CD Pipelines', description: 'GitHub Actions, Jenkins', icon: <GitBranch className="w-10 h-10" /> },
+  { id: 20, title: 'Infrastructure as Code', description: 'Terraform, CloudFormation', icon: <Terminal className="w-10 h-10" /> }
 ];
 
 const skills = ['UI/UX Design', 'AWS', 'Docker', 'CI/CD', 'Linux', 'React', 'Kubernetes'];

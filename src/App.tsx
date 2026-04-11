@@ -3,20 +3,10 @@ import { motion, AnimatePresence, Variants } from 'framer-motion';
 import {
   Sparkles, Globe, Cloud, Code, Paintbrush, Boxes, GitBranch, Terminal,
   Menu, X, ExternalLink, Quote, Mail, Phone,
-  MapPin, ArrowUp, Send, CheckCircle, AlertCircle, Layers, Zap, Crown
-} 
-  import {
-  Boxes,
-  GitBranch,
-  Terminal,
-  Cloud,
-  Database,
-  Server,
-  Code,
-  BarChart3,
-  AlertCircle,
-  Python
+  MapPin, ArrowUp, Send, CheckCircle, AlertCircle, Layers, Zap, Crown,
+  Database, Server, BarChart3, Python, Rocket, Home, Shield, Github
 } from 'lucide-react';
+
 // Types
 interface Project {
   id: number;

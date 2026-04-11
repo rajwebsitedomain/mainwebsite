@@ -1,10 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import {
-  Sparkles, Globe, Cloud, Code, Paintbrush, Boxes, GitBranch, Terminal,
   Menu, X, ExternalLink, Quote, Mail, Phone,
   MapPin, ArrowUp, Send, CheckCircle, AlertCircle, Layers, Zap, Crown,
-  Database, Server, BarChart3, Python, Rocket, Home, Shield, Github
+  Database, Server, BarChart3, Code2, Rocket, Home, Shield, Github  // ✅ Code2 instead of Python
 } from 'lucide-react';
 
 // Types
